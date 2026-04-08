@@ -2,8 +2,8 @@
   "name": "GPU Dev Container",
 
   // Use the pre-built image from GitHub Container Registry.
-  // To build and push: docker build -t ghcr.io/curiousjaki/gpu-devcontainer:latest . && docker push ghcr.io/curiousjaki/gpu-devcontainer:latest
-  "image": "ghcr.io/curiousjaki/gpu-devcontainer:latest",
+  // To build and push: docker build -t ghcr.io/curiousjaki/marker-devcontainer:latest . && docker push ghcr.io/curiousjaki/marker-devcontainer:latest
+  "image": "ghcr.io/curiousjaki/marker-devcontainer:latest",
 
   // GPU access
   "hostRequirements": {
