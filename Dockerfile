@@ -7,4 +7,10 @@ RUN apt update \
         python3-pip \
     && apt autoremove -y
 
-RUN pip install marker-pdf --break-system-packages
+RUN pip install marker-pdf psutil --break-system-packages
+
+COPY llncsdoc.pdf /app/llncsdoc.pdf
+WORKDIR /app
+RUN marker_single /app/llncsdoc.pdf --output_dir .
+
+# NUM_DEVICES=2 NUM_WORKERS=2 marker_chunk_convert ./papers/ ./output/
